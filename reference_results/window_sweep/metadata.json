@@ -1,0 +1,315 @@
+{
+  "source": "single_pulse_5d\\trials.npz",
+  "source_sha256": "4f1149a845b2322ddf1562b97e4692626120ae2afdede1d61fdc7b2c527120fa",
+  "simulator_dir": "aureis-1d-twin-latest",
+  "simulator_git_head": "68a42b9e76a566cde9c7cd9775859936a0adce55",
+  "n_validation": 1000,
+  "input_pulse_pe": 1,
+  "known_k": 1,
+  "criterion": "Bin P95 absolute linear arrival error > 100 ps is above target. Empirical percentiles use finite estimates.",
+  "remaining25_bin_edges_ns": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0,
+    14.0,
+    15.0,
+    16.0,
+    17.0,
+    18.0,
+    19.0,
+    20.0,
+    21.0,
+    22.0,
+    23.0
+  ],
+  "calibration_ends_ns": [
+    20.0,
+    24.95
+  ],
+  "readout_window_ends_ns": [
+    25,
+    30
+  ],
+  "training_spacing_ps": 50,
+  "period_ns": 25.0,
+  "moment_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "relative_ridge": 0.001,
+  "adc_quantization": "enabled in all arms",
+  "pairing": "Reuse original validation arrival times and seeds. Within each event/noise setting, both capture windows are prefixes of one 30 ns readout. This also pairs all overlapping noise samples. The original archived 25 ns run is separate.",
+  "hardware": {
+    "original_hardware": {
+      "fs_in": 200000000000.00482,
+      "tia": {
+        "transimpedance": 1000.0,
+        "poles": [
+          1000000000.0,
+          1000000000.0
+        ],
+        "zeros": [],
+        "noise_psd_onesided": 1.469604666079465e-20,
+        "noise_location": "input",
+        "c_in": 5e-11,
+        "temperature": 300.0
+      },
+      "memory": {
+        "samp_t0": 0.0,
+        "samp_rate": 10000000000.0,
+        "window": 2.5e-08,
+        "depth": 251,
+        "c_cell": 4.141947e-15,
+        "c_par": 5e-16,
+        "r_on": 272.8111228654433,
+        "temperature": 300.0,
+        "jitter_rms": 1e-12,
+        "bandwidth": 4500000000.000001,
+        "samp_noise_rms": 0.001
+      },
+      "adc": {
+        "bits": 8,
+        "v_span": 0.7,
+        "v_cm": 0.45,
+        "baseline": 0.13500000000000004,
+        "noise_rms": 0.0001,
+        "gated": false
+      }
+    },
+    "extended_hardware": {
+      "fs_in": 200000000000.00482,
+      "tia": {
+        "transimpedance": 1000.0,
+        "poles": [
+          1000000000.0,
+          1000000000.0
+        ],
+        "zeros": [],
+        "noise_psd_onesided": 1.469604666079465e-20,
+        "noise_location": "input",
+        "c_in": 5e-11,
+        "temperature": 300.0
+      },
+      "memory": {
+        "samp_t0": 0.0,
+        "samp_rate": 10000000000.0,
+        "window": 3.0000000000000004e-08,
+        "depth": 301,
+        "c_cell": 4.141947e-15,
+        "c_par": 5e-16,
+        "r_on": 228.70744851351546,
+        "temperature": 300.0,
+        "jitter_rms": 1e-12,
+        "bandwidth": 4500000000.000001,
+        "samp_noise_rms": 0.001
+      },
+      "adc": {
+        "bits": 8,
+        "v_span": 0.7,
+        "v_cm": 0.45,
+        "baseline": 0.13500000000000004,
+        "noise_rms": 0.0001,
+        "gated": false
+      }
+    },
+    "extended_memory_bandwidth_hz_if_original_r_on": 3772513039.427783,
+    "extended_internal_span_ns": 31.999999999999993
+  },
+  "original_bin_boundaries": [
+    {
+      "condition": "no_added_noise",
+      "stage": "tia_nominal",
+      "first_failing_bin": {
+        "condition": "no_added_noise",
+        "stage": "tia_nominal",
+        "remaining25_lo_ns": 4.5,
+        "remaining25_hi_ns": 5.0,
+        "arrival_lo_ns": 20.0,
+        "arrival_hi_ns": 20.5,
+        "median_remaining25_ns": 4.7644946604042175,
+        "n": 52,
+        "invalid": 0,
+        "p50_abs_ps": 47.39962147703523,
+        "p95_abs_ps": 210.09997706109198,
+        "within_100ps_n": 35,
+        "within_100ps_pct": 67.3076923076923
+      },
+      "first_bin_of_contiguous_failing_suffix": {
+        "condition": "no_added_noise",
+        "stage": "tia_nominal",
+        "remaining25_lo_ns": 4.5,
+        "remaining25_hi_ns": 5.0,
+        "arrival_lo_ns": 20.0,
+        "arrival_hi_ns": 20.5,
+        "median_remaining25_ns": 4.7644946604042175,
+        "n": 52,
+        "invalid": 0,
+        "p50_abs_ps": 47.39962147703523,
+        "p95_abs_ps": 210.09997706109198,
+        "within_100ps_n": 35,
+        "within_100ps_pct": 67.3076923076923
+      }
+    },
+    {
+      "condition": "no_added_noise",
+      "stage": "adc_v",
+      "first_failing_bin": {
+        "condition": "no_added_noise",
+        "stage": "adc_v",
+        "remaining25_lo_ns": 4.5,
+        "remaining25_hi_ns": 5.0,
+        "arrival_lo_ns": 20.0,
+        "arrival_hi_ns": 20.5,
+        "median_remaining25_ns": 4.7644946604042175,
+        "n": 52,
+        "invalid": 0,
+        "p50_abs_ps": 235.3273715379578,
+        "p95_abs_ps": 2188.566834000755,
+        "within_100ps_n": 20,
+        "within_100ps_pct": 38.46153846153847
+      },
+      "first_bin_of_contiguous_failing_suffix": {
+        "condition": "no_added_noise",
+        "stage": "adc_v",
+        "remaining25_lo_ns": 4.5,
+        "remaining25_hi_ns": 5.0,
+        "arrival_lo_ns": 20.0,
+        "arrival_hi_ns": 20.5,
+        "median_remaining25_ns": 4.7644946604042175,
+        "n": 52,
+        "invalid": 0,
+        "p50_abs_ps": 235.3273715379578,
+        "p95_abs_ps": 2188.566834000755,
+        "within_100ps_n": 20,
+        "within_100ps_pct": 38.46153846153847
+      }
+    },
+    {
+      "condition": "default_noise",
+      "stage": "tia_nominal",
+      "first_failing_bin": {
+        "condition": "default_noise",
+        "stage": "tia_nominal",
+        "remaining25_lo_ns": 22.0,
+        "remaining25_hi_ns": 23.0,
+        "arrival_lo_ns": 2.0,
+        "arrival_hi_ns": 3.0,
+        "median_remaining25_ns": 22.34852447095945,
+        "n": 30,
+        "invalid": 0,
+        "p50_abs_ps": 153.2721641756604,
+        "p95_abs_ps": 444.06500409953804,
+        "within_100ps_n": 8,
+        "within_100ps_pct": 26.666666666666668
+      },
+      "first_bin_of_contiguous_failing_suffix": {
+        "condition": "default_noise",
+        "stage": "tia_nominal",
+        "remaining25_lo_ns": 22.0,
+        "remaining25_hi_ns": 23.0,
+        "arrival_lo_ns": 2.0,
+        "arrival_hi_ns": 3.0,
+        "median_remaining25_ns": 22.34852447095945,
+        "n": 30,
+        "invalid": 0,
+        "p50_abs_ps": 153.2721641756604,
+        "p95_abs_ps": 444.06500409953804,
+        "within_100ps_n": 8,
+        "within_100ps_pct": 26.666666666666668
+      }
+    },
+    {
+      "condition": "default_noise",
+      "stage": "adc_v",
+      "first_failing_bin": {
+        "condition": "default_noise",
+        "stage": "adc_v",
+        "remaining25_lo_ns": 22.0,
+        "remaining25_hi_ns": 23.0,
+        "arrival_lo_ns": 2.0,
+        "arrival_hi_ns": 3.0,
+        "median_remaining25_ns": 22.34852447095945,
+        "n": 30,
+        "invalid": 0,
+        "p50_abs_ps": 265.9640241944907,
+        "p95_abs_ps": 16849.989419397127,
+        "within_100ps_n": 5,
+        "within_100ps_pct": 16.666666666666664
+      },
+      "first_bin_of_contiguous_failing_suffix": {
+        "condition": "default_noise",
+        "stage": "adc_v",
+        "remaining25_lo_ns": 22.0,
+        "remaining25_hi_ns": 23.0,
+        "arrival_lo_ns": 2.0,
+        "arrival_hi_ns": 3.0,
+        "median_remaining25_ns": 22.34852447095945,
+        "n": 30,
+        "invalid": 0,
+        "p50_abs_ps": 265.9640241944907,
+        "p95_abs_ps": 16849.989419397127,
+        "within_100ps_n": 5,
+        "within_100ps_pct": 16.666666666666664
+      }
+    }
+  ],
+  "paired_npz_axes": {
+    "estimated_arrival_s": [
+      "window",
+      "calibration_end",
+      "condition",
+      "event",
+      "stage"
+    ],
+    "estimated_moments": [
+      "window",
+      "calibration_end",
+      "condition",
+      "event",
+      "stage",
+      "moment"
+    ],
+    "waveform_30ns_v": [
+      "condition",
+      "event",
+      "stage",
+      "sample"
+    ],
+    "calibration_C": [
+      "calibration_end",
+      "stage",
+      "moment",
+      "sample"
+    ]
+  }
+}

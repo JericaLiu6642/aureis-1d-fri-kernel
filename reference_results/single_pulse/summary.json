@@ -1,0 +1,115 @@
+{
+  "detected_pulse_amplitude_pe": 1,
+  "seed": 20261108,
+  "trials_per_region": 500,
+  "regions_ns": {
+    "inside": [
+      2.0,
+      20.0
+    ],
+    "late": [
+      20.025,
+      24.925
+    ]
+  },
+  "known_k": 1,
+  "decoder": "rank-1 ESPRIT with 16 consecutive moments",
+  "results": [
+    {
+      "condition": "no_added_noise",
+      "region": "inside",
+      "stage": "tia_nominal",
+      "trials": 500,
+      "invalid_estimates": 0,
+      "median_moment_relative_error": 6.258464975422842e-05,
+      "median_signed_error_ps": -0.010395400316833406,
+      "median_absolute_error_ps": 0.01182780823707454,
+      "p95_absolute_error_ps": 0.03251842174669712,
+      "within_100ps": 1.0
+    },
+    {
+      "condition": "no_added_noise",
+      "region": "inside",
+      "stage": "adc_v",
+      "trials": 500,
+      "invalid_estimates": 0,
+      "median_moment_relative_error": 0.026367017704718828,
+      "median_signed_error_ps": 0.9761705454993819,
+      "median_absolute_error_ps": 5.485162418626787,
+      "p95_absolute_error_ps": 17.56691052100928,
+      "within_100ps": 1.0
+    },
+    {
+      "condition": "no_added_noise",
+      "region": "late",
+      "stage": "tia_nominal",
+      "trials": 500,
+      "invalid_estimates": 0,
+      "median_moment_relative_error": 0.9752441031672769,
+      "median_signed_error_ps": -1730.49726758988,
+      "median_absolute_error_ps": 1730.49726758988,
+      "p95_absolute_error_ps": 3353.5668457462248,
+      "within_100ps": 0.07
+    },
+    {
+      "condition": "no_added_noise",
+      "region": "late",
+      "stage": "adc_v",
+      "trials": 500,
+      "invalid_estimates": 0,
+      "median_moment_relative_error": 1.4711012162886568,
+      "median_signed_error_ps": -3101.733690684824,
+      "median_absolute_error_ps": 3101.733690684824,
+      "p95_absolute_error_ps": 4694.7489026572875,
+      "within_100ps": 0.04
+    },
+    {
+      "condition": "default_noise",
+      "region": "inside",
+      "stage": "tia_nominal",
+      "trials": 500,
+      "invalid_estimates": 0,
+      "median_moment_relative_error": 0.9773802235621639,
+      "median_signed_error_ps": -9.718506701250064,
+      "median_absolute_error_ps": 154.43660222104478,
+      "p95_absolute_error_ps": 544.4284591779028,
+      "within_100ps": 0.32
+    },
+    {
+      "condition": "default_noise",
+      "region": "inside",
+      "stage": "adc_v",
+      "trials": 500,
+      "invalid_estimates": 0,
+      "median_moment_relative_error": 1.2087084054633714,
+      "median_signed_error_ps": 234.94556961086096,
+      "median_absolute_error_ps": 326.52541325881214,
+      "p95_absolute_error_ps": 13818.527475285662,
+      "within_100ps": 0.174
+    },
+    {
+      "condition": "default_noise",
+      "region": "late",
+      "stage": "tia_nominal",
+      "trials": 500,
+      "invalid_estimates": 0,
+      "median_moment_relative_error": 1.3435998884071618,
+      "median_signed_error_ps": -9545.177403135145,
+      "median_absolute_error_ps": 9545.177403135145,
+      "p95_absolute_error_ps": 19641.872627384324,
+      "within_100ps": 0.03
+    },
+    {
+      "condition": "default_noise",
+      "region": "late",
+      "stage": "adc_v",
+      "trials": 500,
+      "invalid_estimates": 0,
+      "median_moment_relative_error": 1.9701069571637486,
+      "median_signed_error_ps": -3273.0560091513557,
+      "median_absolute_error_ps": 3273.0560091513557,
+      "p95_absolute_error_ps": 8473.603376323148,
+      "within_100ps": 0.004
+    }
+  ]
+}
